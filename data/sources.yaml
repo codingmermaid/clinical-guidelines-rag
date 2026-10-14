@@ -1,2 +1,26 @@
-﻿# Guidelines to download (filled in Phase 2)
-guidelines: []
+# Guidelines to download. To add a guideline, add an entry here and run:
+#   python -m guideline_rag.ingest
+# No code changes are needed as long as the guideline is published on nice.org.uk.
+base_url: "https://www.nice.org.uk/guidance"
+
+guidelines:
+  - code: NG106
+    topic: Chronic heart failure in adults
+  - code: NG28
+    topic: Type 2 diabetes in adults
+  - code: NG115
+    topic: Chronic obstructive pulmonary disease (COPD)
+  - code: NG136
+    topic: Hypertension in adults
+
+# NICE lays guidelines out differently: NG106 keeps all recommendations in one
+# "Recommendations" chapter, while NG28 spreads them over a dozen chapters.
+# So we read each guideline's chapter menu and skip the chapters listed here,
+# which contain no recommendations (admin pages, research ideas, background, history).
+exclude_chapters:
+  - Using-this-guideline
+  - Recommendations-for-research
+  - Context
+  - Finding-more-information-and-committee-details
+  - Update-information
+  - Rationale-and-impact
