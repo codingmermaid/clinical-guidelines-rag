@@ -1,0 +1,129 @@
+# Keyword lists used by src/guideline_rag/guardrails.py. Edit here, no code changes needed.
+# Matching is case-insensitive.
+
+# Self-harm language: always treated as urgent, whatever the wording of the question.
+self_harm_phrases:
+  - suicid
+  - kill myself
+  - end my life
+  - want to die
+  - self-harm
+  - self harm
+  - hurt myself
+  - overdose
+
+# Emergency symptoms: urgent only when the question is about a real person
+# (so "how is chest pain assessed in heart failure?" is not treated as an emergency
+# only if it has no person marker; see person_markers below).
+emergency_symptoms:
+  - chest pain
+  - pain in my chest
+  - crushing chest
+  - tight chest
+  - chest tightness
+  - can't breathe
+  - cannot breathe
+  - can't catch my breath
+  - struggling to breathe
+  - severe difficulty breathing
+  - severe shortness of breath
+  - gasping for air
+  - face drooping
+  - slurred speech
+  - sudden weakness
+  - having a stroke
+  - having a heart attack
+  - heart attack
+  - collapsed
+  - unconscious
+  - passed out
+  - coughing up blood
+  - blue lips
+  - seizure
+
+# Words showing the question is about a real person who is affected right now.
+person_markers:
+  - i
+  - i'm
+  - i've
+  - my
+  - me
+  - he
+  - she
+  - they
+  - someone
+  - mum
+  - mom
+  - dad
+  - husband
+  - wife
+  - son
+  - daughter
+  - friend
+  - patient
+
+# Questions asking for advice about the person's own treatment (regular expressions).
+personal_patterns:
+  - '\bshould i\b'
+  - '\bcan i (take|stop|start|skip|have|use|drink|eat)\b'
+  - '\bdo i need (to take|a|an)\b'
+  - '\bhow much (\w+ )?(should|can) i\b'
+  - '\bwhat dose (should|can|do) i\b'
+  - '\b(my|i am|i''m) (on|taking|prescribed)\b'
+  - '\bmy (doctor|gp|medication|medicine|tablets|pills|dose|blood pressure|blood sugar|diabetes|heart|inhaler)\b'
+  - '\bi (have|was diagnosed|was prescribed|take|am taking)\b'
+  - '\bwhat (medicine|medication|drug|treatment) should i\b'
+
+# Topics covered by the indexed guidelines. A question with none of these words is
+# checked by a quick LLM classification before being called out of scope.
+scope_topics:
+  - NICE guidelines on chronic heart failure (NG106)
+  - type 2 diabetes in adults (NG28)
+  - chronic obstructive pulmonary disease, COPD (NG115)
+  - hypertension (high blood pressure) in adults (NG136)
+
+scope_keywords:
+  - heart
+  - cardiac
+  - cardio
+  - ejection fraction
+  - hfref
+  - hfpef
+  - ace inhibitor
+  - arni
+  - beta-blocker
+  - beta blocker
+  - mra
+  - sglt2
+  - sglt-2
+  - diuretic
+  - ivabradine
+  - diabet
+  - metformin
+  - insulin
+  - glucose
+  - hba1c
+  - sulfonylurea
+  - gliptin
+  - glp-1
+  - pioglitazone
+  - copd
+  - chronic obstructive
+  - spirometry
+  - emphysema
+  - bronchitis
+  - bronchodilator
+  - inhaler
+  - exacerbation
+  - breathless
+  - hypertension
+  - blood pressure
+  - antihypertensive
+  - amlodipine
+  - ramipril
+  - nice
+  - guideline
+  - ng106
+  - ng28
+  - ng115
+  - ng136
