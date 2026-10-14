@@ -1,0 +1,32 @@
+# Central settings. Change models and retrieval behaviour here, not in code.
+
+models:
+  # qwen2.5:7b is chosen because this machine has >= 16 GB RAM (31.8 GB).
+  # Use qwen2.5:3b on machines with less than 16 GB.
+  llm: "qwen2.5:7b"
+  embedding: "nomic-embed-text"
+  reranker: "BAAI/bge-reranker-base"
+  ollama_url: "http://localhost:11434"
+
+chunking:
+  max_section_tokens: 500   # long non-recommendation sections are split above this
+  overlap_tokens: 50
+
+retrieval:
+  # mode: vector | bm25 | hybrid | hybrid_rerank
+  mode: "hybrid_rerank"
+  vector_top_k: 20
+  bm25_top_k: 20
+  final_top_k: 5
+
+paths:
+  raw: "data/raw"
+  processed: "data/processed"
+  sources: "data/sources.yaml"
+  chunks: "data/processed/chunks.jsonl"
+  qdrant: "storage/qdrant"
+  bm25: "storage/bm25"
+
+ingest:
+  delay_seconds: 2
+  user_agent: "guideline-rag-educational/0.1 (personal non-commercial learning project)"
