@@ -1,0 +1,2 @@
+mode,hit_rate@5,mrr,faithfulness,answer_relevance,citation_valid_final,citation_valid_first,refusal_accuracy,wrong_refusal_rate,guardrail_accuracy,avg_latency_s
+hybrid_rerank,1.0,1.0,1.0,0.5,1.0,1.0,0.667,0.333,1.0,16.733

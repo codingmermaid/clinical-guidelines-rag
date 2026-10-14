@@ -75,6 +75,7 @@ class Answer(BaseModel):
     retrieved: list[Source] = []  # everything the retriever found, for transparency
     notes: list[str] = []  # warnings such as "guideline may be out of date"
     route: str = "answer"  # set by the pipeline / guardrails
+    attempts: int = 1  # LLM calls used; 2 means the first reply failed citation checks (used by evaluation)
 
 
 def to_source(r: Retrieved) -> Source:
@@ -139,7 +140,9 @@ def generate_answer(question: str, retrieved: list[Retrieved], extra_instruction
     by_id = {s.chunk_id: s for s in all_sources}
 
     result, problems = None, ["no reply"]
+    used = 0
     for attempt in range(2):  # first try + one retry
+        used += 1
         try:
             result = _ask_llm(messages)
             problems = verify(result, retrieved)
@@ -155,12 +158,12 @@ def generate_answer(question: str, retrieved: list[Retrieved], extra_instruction
 
     if problems or result is None:
         return Answer(question=question, answer=SAFE_ANSWER, answerable=False, verified=False,
-                      retrieved=all_sources, route="unverified")
+                      retrieved=all_sources, route="unverified", attempts=used)
     if not result.answerable:
         # Small models sometimes put junk such as "false" in the text field; replace it.
         text = result.answer if len(result.answer.strip()) >= 20 else NOT_ANSWERABLE
         return Answer(question=question, answer=text, answerable=False, verified=True,
-                      retrieved=all_sources)
-    return Answer(question=question, answer=result.answer, answerable=True, verified=True,
+                      retrieved=all_sources, attempts=used)
+    return Answer(question=question, answer=result.answer, answerable=True, verified=True, attempts=used,
                   citations=result.citations, supporting_quotes=result.supporting_quotes,
                   sources=[by_id[c] for c in dict.fromkeys(result.citations)], retrieved=all_sources)
