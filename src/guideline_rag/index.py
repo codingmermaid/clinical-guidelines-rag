@@ -10,6 +10,7 @@ Rebuild everything with:  python -m guideline_rag.index --rebuild
 from __future__ import annotations
 
 import argparse
+import atexit
 import shutil
 import uuid
 from functools import lru_cache
@@ -45,7 +46,9 @@ def embed_query(text: str) -> list[float]:
 @lru_cache(maxsize=1)
 def get_qdrant() -> QdrantClient:
     """Local-mode Qdrant stored in a folder. Only one process can open it at a time."""
-    return QdrantClient(path=str(project_path(load_config()["paths"]["qdrant"])))
+    client = QdrantClient(path=str(project_path(load_config()["paths"]["qdrant"])))
+    atexit.register(client.close)  # close cleanly so Python does not print errors at shutdown
+    return client
 
 
 def build_vector_index(chunks: list[Chunk]) -> None:
