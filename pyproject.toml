@@ -36,3 +36,6 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+# The deepeval/phoenix pytest plugins import aiohttp before our package can apply the
+# Windows certificate workaround (see guideline_rag/__init__.py); our tests do not need them.
+addopts = "-p no:phoenix -p no:deepeval"
