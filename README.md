@@ -129,10 +129,10 @@ until a human has checked the test set. Reproduce with `python eval/run_eval.py`
 
 | Retrieval mode | Hit rate@5 | MRR | Faithfulness | Answer relevance | Citation valid | Refusal accuracy | Wrongly refused | Guardrail acc. |
 |---|---|---|---|---|---|---|---|---|
-| vector only | 0.945 | 0.801 | 0.900 | 0.873 | 0.909 | 0.867 | 0.127 | 1.0 |
-| BM25 only | 0.909 | 0.781 | 0.851 | 0.850 | 0.947 | 0.800 | 0.073 | 1.0 |
-| hybrid (RRF) | 0.945 | 0.836 | 0.876 | 0.885 | 0.930 | 0.867 | 0.073 | 1.0 |
-| hybrid + rerank | 0.964 | 0.778 | 0.845 | 0.881 | 0.926 | 0.867 | 0.127 | 1.0 |
+| vector only | 0.945 | 0.801 | 0.860 | 0.898 | 0.911 | 0.933 | 0.091 | 1.0 |
+| BM25 only | 0.909 | 0.781 | 0.886 | 0.853 | 0.965 | 0.800 | 0.055 | 1.0 |
+| hybrid (RRF) | 0.945 | 0.836 | 0.909 | 0.885 | 0.946 | 0.867 | 0.073 | 1.0 |
+| hybrid + rerank | 0.964 | 0.778 | 0.846 | 0.872 | 0.944 | 0.867 | 0.109 | 1.0 |
 
 ![Comparison of retrieval modes](eval/results/comparison.png)
 
@@ -145,16 +145,21 @@ How to read this:
   **wrongly refused** is the share of answerable questions declined.
 - **The four modes are close.** With 55 answerable questions, one question is worth about 1.8 points, so
   most gaps here are within noise. Do not conclude that one mode is "the best" from this run alone.
-- **Hybrid had the best MRR (0.84)**: combining keyword and meaning search put the expected passage
-  higher more often than either alone.
+- **Hybrid had the best MRR (0.84) and the best faithfulness (0.91)**: combining keyword and meaning
+  search put the expected passage higher more often than either alone.
+- **The citation retry helps.** "Citation valid" counts answers that pass the code checks after the one
+  allowed retry; on the model's first attempt the rate was 0.86 to 0.93 depending on the mode
+  (`citation_valid_first` in `eval/results/summary.csv`). The retry rescues a few answers that would
+  otherwise be replaced by "I could not find a reliable answer".
 - **Reranking found the expected passage in the top 5 most often (0.96) but ranked it first less often
   (MRR 0.78).** The general-purpose cross-encoder sometimes pushes the exact source down in favour of
   background text that mentions the same words. Mixed results like this are a real lesson: a reranker is
   not automatically better, and it is the slowest option.
-- **Keyword-only search is the fastest and weakest at hit rate**, but it wrongly refuses the fewest questions.
+- **Keyword-only search is the fastest and weakest at hit rate**, but it wrongly refuses the fewest
+  questions. **Vector-only search was best at declining questions the guidelines cannot answer** (0.93).
 - Guardrail routing was correct on all 10 guardrail questions, which is a small sample.
-- Refusal accuracy of 0.80 to 0.87 means the model sometimes answers a question the guidelines do not
-  cover, using a loosely related passage. Faithfulness of about 0.85 to 0.90 means some answers include
+- Refusal accuracy of 0.80 to 0.93 means the model sometimes answers a question the guidelines do not
+  cover, using a loosely related passage. Faithfulness of about 0.85 to 0.91 means some answers include
   a claim the judge could not find in the retrieved text. This is why the interface always shows the
   source passage.
 - Latency (not in the table; see `eval/results/summary.csv`) was measured with two questions running at

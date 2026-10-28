@@ -6,3 +6,7 @@ __pycache__/
 storage/
 data/raw/
 .env
+*.log
+.env*
+# NICE-derived text: rebuild locally with `python -m guideline_rag.ingest` and `python -m guideline_rag.chunking`
+data/processed/

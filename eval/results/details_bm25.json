@@ -20,7 +20,7 @@
         "NG106-1.12.3",
         "NG106-1.12.4"
       ],
-      "latency_s": 7.0,
+      "latency_s": 7.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -50,7 +50,7 @@
         "NG115-table-2",
         "NG106-1.1.5"
       ],
-      "latency_s": 5.9,
+      "latency_s": 6.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -86,7 +86,7 @@
         "NG106-1.1.4"
       ],
       "faithfulness": 1.0,
-      "answer_relevance": 0.5
+      "answer_relevance": 1.0
     },
     {
       "id": "ans-004",
@@ -108,7 +108,7 @@
         "NG106-ctx-12",
         "NG106-1.5.5"
       ],
-      "latency_s": 4.9,
+      "latency_s": 4.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -151,7 +151,7 @@
       "type": "answerable",
       "question": "What alternative treatment options should be considered for patients with angioedema who cannot tolerate ACE inhibitors in heart failure with reduced ejection fraction?",
       "mode": "bm25",
-      "answer": "For patients with angioedema who cannot tolerate ACE inhibitors in heart failure with reduced ejection fraction, the alternative treatment options that should be considered include a beta-blocker, MRA, and SGLT2 inhibitor, and an ARB can also be considered.",
+      "answer": "For patients with angioedema who cannot tolerate ACE inhibitors in heart failure with reduced ejection fraction, the alternative treatment options that should be considered include a beta-blocker, MRA, and SGLT2 inhibitor.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -166,13 +166,13 @@
         "NG106-1.4.2",
         "NG106-ctx-9"
       ],
-      "latency_s": 9.5,
+      "latency_s": 9.8,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
         "NG106-1.4.4"
       ],
-      "faithfulness": 0.5,
+      "faithfulness": 1.0,
       "answer_relevance": 1.0
     },
     {
@@ -195,7 +195,7 @@
         "NG106-1.2.6",
         "NG106-1.4.4"
       ],
-      "latency_s": 3.5,
+      "latency_s": 3.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -224,7 +224,7 @@
         "NG106-1.2.3",
         "NG106-1.2.2"
       ],
-      "latency_s": 3.9,
+      "latency_s": 4.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -253,7 +253,7 @@
         "NG106-1.1.4",
         "NG106-1.1.8"
       ],
-      "latency_s": 5.2,
+      "latency_s": 3.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -282,7 +282,7 @@
         "NG106-1.2.6",
         "NG106-1.2.8"
       ],
-      "latency_s": 4.0,
+      "latency_s": 7.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -340,7 +340,7 @@
         "NG115-1.3.20",
         "NG115-1.3.1"
       ],
-      "latency_s": 3.2,
+      "latency_s": 6.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -369,7 +369,7 @@
         "NG115-1.2.110",
         "NG106-1.1.7"
       ],
-      "latency_s": 5.1,
+      "latency_s": 3.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -398,7 +398,7 @@
         "NG106-1.11.1",
         "NG115-1.2.96"
       ],
-      "latency_s": 3.4,
+      "latency_s": 3.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -427,7 +427,7 @@
         "NG28-ctx-17-part1",
         "NG28-ctx-29"
       ],
-      "latency_s": 6.7,
+      "latency_s": 4.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -457,7 +457,7 @@
         "NG28-1.9.3",
         "NG28-ctx-17-part3"
       ],
-      "latency_s": 4.3,
+      "latency_s": 6.3,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -488,13 +488,13 @@
         "NG28-1.42.4",
         "NG106-1.7.9"
       ],
-      "latency_s": 7.5,
+      "latency_s": 5.4,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
         "NG28-1.42.2"
       ],
-      "faithfulness": 0.8333333333333334,
+      "faithfulness": 1.0,
       "answer_relevance": 1.0
     },
     {
@@ -520,7 +520,7 @@
         "NG28-1.2.5",
         "NG28-1.2.6"
       ],
-      "latency_s": 5.6,
+      "latency_s": 6.3,
       "hit@5": false,
       "rr": 0.16666666666666666,
       "expected_chunk_ids": [
@@ -549,7 +549,7 @@
         "NG28-1.9.1",
         "NG28-ctx-8"
       ],
-      "latency_s": 3.9,
+      "latency_s": 4.0,
       "hit@5": true,
       "rr": 0.25,
       "expected_chunk_ids": [
@@ -578,7 +578,7 @@
         "NG28-ctx-74",
         "NG28-ctx-3-part1"
       ],
-      "latency_s": 4.6,
+      "latency_s": 5.8,
       "hit@5": false,
       "rr": 0.1,
       "expected_chunk_ids": [
@@ -592,11 +592,14 @@
       "type": "answerable",
       "question": "What should be assessed before starting medicines for a patient?",
       "mode": "bm25",
-      "answer": "I could not find a reliable answer in the guidelines.",
-      "answerable": false,
-      "verified": false,
-      "route": "unverified",
-      "citations": [],
+      "answer": "Before starting medicines for a patient, their current cardiovascular and renal status, and risk of developing cardiovascular disease in the future should be assessed. Additionally, frailty should be assessed if it is a concern.",
+      "answerable": true,
+      "verified": true,
+      "route": "answer",
+      "citations": [
+        "NG28-1.11.2",
+        "NG28-1.11.1"
+      ],
       "attempts": 2,
       "retrieved_top5": [
         "NG28-1.11.2",
@@ -605,12 +608,14 @@
         "NG115-1.3.32",
         "NG115-1.2.55"
       ],
-      "latency_s": 9.0,
+      "latency_s": 8.0,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
         "NG28-1.11.1"
-      ]
+      ],
+      "faithfulness": 1.0,
+      "answer_relevance": 1.0
     },
     {
       "id": "ans-022",
@@ -632,7 +637,7 @@
         "NG28-ctx-66",
         "NG28-1.37.3"
       ],
-      "latency_s": 4.0,
+      "latency_s": 3.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -690,7 +695,7 @@
         "NG115-ctx-12",
         "NG28-1.35.1"
       ],
-      "latency_s": 3.9,
+      "latency_s": 4.4,
       "hit@5": false,
       "rr": 0.0,
       "expected_chunk_ids": [
@@ -704,12 +709,11 @@
       "type": "answerable",
       "question": "For which type of adults with type 2 diabetes is continuous glucose monitoring (CGM) recommended?",
       "mode": "bm25",
-      "answer": "Continuous glucose monitoring (CGM) is recommended for adults with type 2 diabetes who use insulin, have recurrent or severe hypoglycaemic events, have impaired hypoglycaemic awareness, or use insulin and have a condition or disability that restricts their ability to self-monitor blood glucose levels.",
+      "answer": "Continuous glucose monitoring (CGM) is recommended for adults with type 2 diabetes who use insulin, particularly those with recurrent or severe hypoglycaemic events, impaired hypoglycaemic awareness, or a condition or disability that restricts their ability to self-monitor blood glucose levels.",
       "answerable": true,
       "verified": true,
       "route": "answer",
       "citations": [
-        "NG28-ctx-3-part1",
         "NG28-ctx-3-part1",
         "NG28-ctx-3-part1",
         "NG28-ctx-3-part1"
@@ -722,7 +726,7 @@
         "NG28-ctx-3-part1",
         "NG28-1.7.5"
       ],
-      "latency_s": 6.0,
+      "latency_s": 4.7,
       "hit@5": false,
       "rr": 0.1,
       "expected_chunk_ids": [
@@ -751,7 +755,7 @@
         "NG28-1.34.2",
         "NG28-1.34.1"
       ],
-      "latency_s": 3.9,
+      "latency_s": 5.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -780,7 +784,7 @@
         "NG28-ctx-54",
         "NG28-ctx-51"
       ],
-      "latency_s": 4.9,
+      "latency_s": 3.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -807,7 +811,7 @@
         "NG28-ctx-3-part1",
         "NG28-ctx-3-part4"
       ],
-      "latency_s": 10.4,
+      "latency_s": 10.9,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -834,7 +838,7 @@
         "NG106-1.11.1",
         "NG106-1.10.3"
       ],
-      "latency_s": 5.7,
+      "latency_s": 3.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -863,7 +867,7 @@
         "NG115-1.1.20",
         "NG115-ctx-1"
       ],
-      "latency_s": 5.9,
+      "latency_s": 6.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -906,7 +910,7 @@
       "type": "answerable",
       "question": "What should clinicians do when diagnosing COPD in individuals with mild airflow obstruction based on symptoms alone?",
       "mode": "bm25",
-      "answer": "Clinicians should only diagnose COPD in individuals with mild airflow obstruction if they have one or more of the symptoms specified in the recommendation on symptoms.",
+      "answer": "Clinicians should diagnose COPD in individuals with mild airflow obstruction only if they have one or more of the symptoms specified in the recommendation on symptoms.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -921,14 +925,14 @@
         "NG115-ctx-8",
         "NG115-1.3.32"
       ],
-      "latency_s": 3.6,
+      "latency_s": 3.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
         "NG115-1.1.27"
       ],
       "faithfulness": 1.0,
-      "answer_relevance": 0.5
+      "answer_relevance": 0.0
     },
     {
       "id": "ans-033",
@@ -979,7 +983,7 @@
         "NG106-1.2.12",
         "NG115-1.1.10"
       ],
-      "latency_s": 3.9,
+      "latency_s": 3.5,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -1009,7 +1013,7 @@
         "NG115-1.2.69",
         "NG115-1.2.71"
       ],
-      "latency_s": 4.5,
+      "latency_s": 4.6,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -1038,7 +1042,7 @@
         "NG115-1.2.66",
         "NG115-ctx-17"
       ],
-      "latency_s": 3.6,
+      "latency_s": 4.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1067,7 +1071,7 @@
         "NG115-1.2.96",
         "NG115-ctx-25"
       ],
-      "latency_s": 3.2,
+      "latency_s": 3.3,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1126,7 +1130,7 @@
         "NG115-ctx-3",
         "NG115-ctx-4"
       ],
-      "latency_s": 4.7,
+      "latency_s": 4.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1155,7 +1159,7 @@
         "NG115-1.3.35",
         "NG115-1.2.75"
       ],
-      "latency_s": 3.6,
+      "latency_s": 5.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1214,13 +1218,13 @@
         "NG136-table-2",
         "NG136-1.4.22"
       ],
-      "latency_s": 4.8,
+      "latency_s": 6.4,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
         "NG136-table-1"
       ],
-      "faithfulness": 0.0,
+      "faithfulness": 1.0,
       "answer_relevance": 1.0
     },
     {
@@ -1243,7 +1247,7 @@
         "NG136-1.2.3",
         "NG136-1.2.8"
       ],
-      "latency_s": 3.7,
+      "latency_s": 3.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1272,7 +1276,7 @@
         "NG136-1.4.18",
         "NG136-1.4.22"
       ],
-      "latency_s": 4.5,
+      "latency_s": 5.4,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1286,7 +1290,7 @@
       "type": "answerable",
       "question": "Which type of antihypertensive drugs are recommended for adults with resistant hypertension and a potassium level over 4.5 mmol/l during step 4 treatment?",
       "mode": "bm25",
-      "answer": "For adults with resistant hypertension and a potassium level over 4.5 mmol/l during step 4 treatment, alpha-blockers or beta-blockers are recommended.",
+      "answer": "Alpha-blockers or beta-blockers are recommended for adults with resistant hypertension and a potassium level over 4.5 mmol/l during step 4 treatment.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -1330,7 +1334,7 @@
         "NG136-1.4.13",
         "NG136-ctx-7"
       ],
-      "latency_s": 4.3,
+      "latency_s": 4.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1359,7 +1363,7 @@
         "NG136-ctx-12",
         "NG28-1.23.1"
       ],
-      "latency_s": 3.9,
+      "latency_s": 4.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1390,7 +1394,7 @@
         "NG136-1.4.11",
         "NG136-1.2.12"
       ],
-      "latency_s": 5.7,
+      "latency_s": 6.4,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -1446,7 +1450,7 @@
         "NG136-1.1.7",
         "NG136-1.4.19"
       ],
-      "latency_s": 12.6,
+      "latency_s": 11.5,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -1458,14 +1462,14 @@
       "type": "answerable",
       "question": "What lifestyle intervention is recommended for patients with hypertension to help manage their condition?",
       "mode": "bm25",
-      "answer": "The guidelines recommend offering lifestyle advice to people with suspected or diagnosed hypertension, and continuing to offer it periodically. They also suggest informing people about local initiatives that provide support and promote healthy lifestyle changes, especially those that include group work. Additionally, they advise offering help to smokers to stop smoking and discouraging excessive consumption of coffee and other caffeine-rich products.",
+      "answer": "The guidelines recommend offering lifestyle advice to people with suspected or diagnosed hypertension, and continuing to offer it periodically. They also suggest informing people about local initiatives that provide support and promote healthy lifestyle changes, especially those that include group work. Additionally, they advise discouraging excessive consumption of coffee and other caffeine-rich products.",
       "answerable": true,
       "verified": true,
       "route": "answer",
       "citations": [
         "NG136-1.4.1",
         "NG136-1.4.8",
-        "NG136-1.4.7"
+        "NG136-1.4.4"
       ],
       "attempts": 1,
       "retrieved_top5": [
@@ -1475,7 +1479,7 @@
         "NG136-ctx-5",
         "NG136-1.4.4"
       ],
-      "latency_s": 4.5,
+      "latency_s": 4.4,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -1504,7 +1508,7 @@
         "NG136-1.4.48",
         "NG136-1.4.51"
       ],
-      "latency_s": 4.0,
+      "latency_s": 4.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1533,7 +1537,7 @@
         "NG136-1.5.1",
         "NG28-ctx-65"
       ],
-      "latency_s": 4.7,
+      "latency_s": 4.5,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -1564,7 +1568,7 @@
         "NG136-1.4.40",
         "NG136-1.4.51"
       ],
-      "latency_s": 7.2,
+      "latency_s": 6.3,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1591,7 +1595,7 @@
         "NG106-1.4.4",
         "NG106-1.4.3"
       ],
-      "latency_s": 3.2,
+      "latency_s": 3.1,
       "hit@5": false,
       "rr": 0.16666666666666666,
       "expected_chunk_ids": [
@@ -1618,7 +1622,7 @@
         "NG136-1.4.48",
         "NG136-1.2.6"
       ],
-      "latency_s": 3.9
+      "latency_s": 4.7
     },
     {
       "id": "una-057",
@@ -1638,7 +1642,7 @@
         "NG136-ctx-2",
         "NG115-1.2.134"
       ],
-      "latency_s": 3.1
+      "latency_s": 2.8
     },
     {
       "id": "una-058",
@@ -1678,7 +1682,7 @@
         "NG115-1.2.12",
         "NG115-ctx-7"
       ],
-      "latency_s": 3.0
+      "latency_s": 2.9
     },
     {
       "id": "una-060",
@@ -1742,7 +1746,7 @@
         "NG115-ctx-26",
         "NG115-table-5"
       ],
-      "latency_s": 4.6
+      "latency_s": 4.7
     },
     {
       "id": "una-063",
@@ -1762,7 +1766,7 @@
         "NG136-1.2.2",
         "NG136-ctx-22"
       ],
-      "latency_s": 3.4
+      "latency_s": 3.3
     },
     {
       "id": "una-064",
@@ -1802,7 +1806,7 @@
         "NG115-1.1.21",
         "NG115-1.2.120"
       ],
-      "latency_s": 2.9
+      "latency_s": 2.8
     },
     {
       "id": "una-066",
@@ -1902,7 +1906,7 @@
         "NG28-1.9.3",
         "NG136-1.4.26"
       ],
-      "latency_s": 2.9
+      "latency_s": 2.8
     }
   ],
   "guardrails": [

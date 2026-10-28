@@ -47,7 +47,7 @@
         "NG106-1.8.5",
         "NG106-1.2.3"
       ],
-      "latency_s": 15.1,
+      "latency_s": 14.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -132,7 +132,7 @@
         "NG106-1.4.6",
         "NG106-ctx-6"
       ],
-      "latency_s": 7.3,
+      "latency_s": 6.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -161,13 +161,13 @@
         "NG106-ctx-9",
         "NG106-1.5.1"
       ],
-      "latency_s": 5.4,
+      "latency_s": 6.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
         "NG106-1.4.4"
       ],
-      "faithfulness": 0.0,
+      "faithfulness": 1.0,
       "answer_relevance": 1.0
     },
     {
@@ -190,7 +190,7 @@
         "NG106-1.4.7",
         "NG106-1.1.2"
       ],
-      "latency_s": 6.2,
+      "latency_s": 6.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -219,7 +219,7 @@
         "NG106-1.2.5",
         "NG106-1.2.2"
       ],
-      "latency_s": 7.5,
+      "latency_s": 7.3,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -248,7 +248,7 @@
         "NG106-ctx-12",
         "NG106-ctx-14-part1"
       ],
-      "latency_s": 7.8,
+      "latency_s": 6.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -277,7 +277,7 @@
         "NG106-1.2.6",
         "NG106-1.2.2"
       ],
-      "latency_s": 5.7,
+      "latency_s": 7.2,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -306,7 +306,7 @@
         "NG106-1.7.11",
         "NG136-1.4.51"
       ],
-      "latency_s": 7.1,
+      "latency_s": 6.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -335,7 +335,7 @@
         "NG106-1.8.4",
         "NG106-1.3.2"
       ],
-      "latency_s": 5.1,
+      "latency_s": 6.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -364,7 +364,7 @@
         "NG106-1.12.4",
         "NG106-1.1.4"
       ],
-      "latency_s": 7.0,
+      "latency_s": 5.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -393,7 +393,7 @@
         "NG115-table-5",
         "NG106-1.3.2"
       ],
-      "latency_s": 5.2,
+      "latency_s": 6.5,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -422,7 +422,7 @@
         "NG28-ctx-20",
         "NG28-ctx-18"
       ],
-      "latency_s": 6.7,
+      "latency_s": 6.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -513,7 +513,7 @@
         "NG28-1.2.2",
         "NG28-1.2.5"
       ],
-      "latency_s": 9.3,
+      "latency_s": 9.4,
       "hit@5": true,
       "rr": 0.25,
       "expected_chunk_ids": [
@@ -542,7 +542,7 @@
         "NG28-1.9.2",
         "NG28-ctx-7-part1"
       ],
-      "latency_s": 6.0,
+      "latency_s": 7.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -556,11 +556,13 @@
       "type": "answerable",
       "question": "For a patient who experiences frequent hypoglycemia, which type of insulin preparation would be more appropriate according to the guideline?",
       "mode": "hybrid",
-      "answer": "I could not find a reliable answer in the guidelines.",
-      "answerable": false,
-      "verified": false,
-      "route": "unverified",
-      "citations": [],
+      "answer": "For a patient who experiences frequent hypoglycemia, the guideline suggests considering pre-mixed preparations that include insulin analogues. This is based on the recommendation that different insulin therapies may be more useful for different people, and in this case, insulin analogues can be more suitable due to the risk of hypoglycaemia.",
+      "answerable": true,
+      "verified": true,
+      "route": "answer",
+      "citations": [
+        "NG28-ctx-61"
+      ],
       "attempts": 2,
       "retrieved_top5": [
         "NG28-ctx-61",
@@ -569,26 +571,25 @@
         "NG28-1.34.2",
         "NG28-1.33.2"
       ],
-      "latency_s": 14.0,
+      "latency_s": 9.3,
       "hit@5": true,
       "rr": 0.25,
       "expected_chunk_ids": [
         "NG28-1.34.2"
-      ]
+      ],
+      "faithfulness": 0.6666666666666666,
+      "answer_relevance": 1.0
     },
     {
       "id": "ans-021",
       "type": "answerable",
       "question": "What should be assessed before starting medicines for a patient?",
       "mode": "hybrid",
-      "answer": "The guidelines recommend assessing cardiovascular and renal status, and the risk of developing cardiovascular disease in the future before starting medicines. Frailty should be assessed, particularly in terms of adverse treatment effects and polypharmacy.",
-      "answerable": true,
+      "answer": "The guidelines recommend assessing cardiovascular status and risk, and frailty if it is a concern. However, the exact quote about frailty was not found in the provided passages.",
+      "answerable": false,
       "verified": true,
       "route": "answer",
-      "citations": [
-        "NG28-1.11.1",
-        "NG28-ctx-11"
-      ],
+      "citations": [],
       "attempts": 2,
       "retrieved_top5": [
         "NG28-ctx-12",
@@ -597,14 +598,12 @@
         "NG28-ctx-11",
         "NG106-1.7.2"
       ],
-      "latency_s": 10.1,
+      "latency_s": 9.0,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
         "NG28-1.11.1"
-      ],
-      "faithfulness": 1.0,
-      "answer_relevance": 1.0
+      ]
     },
     {
       "id": "ans-022",
@@ -626,7 +625,7 @@
         "NG28-ctx-66",
         "NG28-1.6.3"
       ],
-      "latency_s": 5.8,
+      "latency_s": 7.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -655,7 +654,7 @@
         "NG28-ctx-18",
         "NG28-1.6.5"
       ],
-      "latency_s": 6.5,
+      "latency_s": 6.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -682,7 +681,7 @@
         "NG115-1.2.114",
         "NG28-ctx-38-part1"
       ],
-      "latency_s": 14.0,
+      "latency_s": 11.1,
       "hit@5": false,
       "rr": 0.0,
       "expected_chunk_ids": [
@@ -711,7 +710,7 @@
         "NG28-1.7.7",
         "NG28-ctx-3-part1"
       ],
-      "latency_s": 6.7,
+      "latency_s": 8.6,
       "hit@5": false,
       "rr": 0.125,
       "expected_chunk_ids": [
@@ -740,7 +739,7 @@
         "NG28-1.33.2",
         "NG28-1.34.1"
       ],
-      "latency_s": 6.8,
+      "latency_s": 4.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -769,7 +768,7 @@
         "NG28-ctx-51",
         "NG28-1.28.2"
       ],
-      "latency_s": 5.8,
+      "latency_s": 6.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -798,7 +797,7 @@
         "NG28-ctx-3-part4",
         "NG28-ctx-72"
       ],
-      "latency_s": 3.6,
+      "latency_s": 7.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -914,7 +913,7 @@
         "NG115-table-4",
         "NG115-ctx-8"
       ],
-      "latency_s": 6.4,
+      "latency_s": 6.5,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -943,7 +942,7 @@
         "NG115-ctx-21",
         "NG115-1.2.79"
       ],
-      "latency_s": 7.1,
+      "latency_s": 6.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -972,7 +971,7 @@
         "NG115-1.1.8",
         "NG115-1.1.7"
       ],
-      "latency_s": 5.0,
+      "latency_s": 6.6,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -1002,7 +1001,7 @@
         "NG115-1.2.68",
         "NG115-1.2.71"
       ],
-      "latency_s": 7.9,
+      "latency_s": 6.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1031,7 +1030,7 @@
         "NG115-1.2.65",
         "NG115-1.2.58"
       ],
-      "latency_s": 5.4,
+      "latency_s": 7.3,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1060,7 +1059,7 @@
         "NG115-1.2.94",
         "NG115-ctx-26"
       ],
-      "latency_s": 5.5,
+      "latency_s": 5.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1090,7 +1089,7 @@
         "NG115-1.2.50",
         "NG115-1.2.51"
       ],
-      "latency_s": 8.4,
+      "latency_s": 8.7,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -1119,7 +1118,7 @@
         "NG115-ctx-4",
         "NG115-ctx-3"
       ],
-      "latency_s": 6.7,
+      "latency_s": 8.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1148,7 +1147,7 @@
         "NG115-1.3.35",
         "NG115-1.2.75"
       ],
-      "latency_s": 6.5,
+      "latency_s": 4.4,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1177,7 +1176,7 @@
         "NG106-ctx-3-part1",
         "NG115-table-5"
       ],
-      "latency_s": 7.6,
+      "latency_s": 6.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1206,13 +1205,13 @@
         "NG136-ctx-9",
         "NG136-1.4.21"
       ],
-      "latency_s": 5.8,
+      "latency_s": 6.4,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
         "NG136-table-1"
       ],
-      "faithfulness": 0.0,
+      "faithfulness": 1.0,
       "answer_relevance": 1.0
     },
     {
@@ -1235,7 +1234,7 @@
         "NG136-1.4.20",
         "NG136-1.4.21"
       ],
-      "latency_s": 6.1,
+      "latency_s": 7.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1264,7 +1263,7 @@
         "NG136-1.4.22",
         "NG136-1.4.18"
       ],
-      "latency_s": 7.1,
+      "latency_s": 5.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1278,7 +1277,7 @@
       "type": "answerable",
       "question": "Which type of antihypertensive drugs are recommended for adults with resistant hypertension and a potassium level over 4.5 mmol/l during step 4 treatment?",
       "mode": "hybrid",
-      "answer": "For adults with resistant hypertension starting step 4 treatment who have a blood potassium level of more than 4.5 mmol/l, an alpha-blocker or beta-blocker is recommended.",
+      "answer": "Alpha-blockers or beta-blockers are recommended for adults with resistant hypertension and a potassium level over 4.5 mmol/l during step 4 treatment.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -1293,7 +1292,7 @@
         "NG136-1.4.48",
         "NG136-1.4.46"
       ],
-      "latency_s": 5.9,
+      "latency_s": 5.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1322,7 +1321,7 @@
         "NG136-1.4.13",
         "NG136-1.4.12"
       ],
-      "latency_s": 6.5,
+      "latency_s": 6.2,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -1408,7 +1407,7 @@
         "NG136-1.2.10",
         "NG136-1.2.7"
       ],
-      "latency_s": 14.3,
+      "latency_s": 9.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1435,7 +1434,7 @@
         "NG136-1.1.7",
         "NG136-1.1.2"
       ],
-      "latency_s": 6.0,
+      "latency_s": 7.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1466,7 +1465,7 @@
         "NG136-ctx-5",
         "NG136-1.4.4"
       ],
-      "latency_s": 11.6,
+      "latency_s": 11.0,
       "hit@5": false,
       "rr": 0.16666666666666666,
       "expected_chunk_ids": [
@@ -1524,7 +1523,7 @@
         "NG136-1.5.3",
         "NG136-1.2.7"
       ],
-      "latency_s": 6.7,
+      "latency_s": 6.5,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1553,7 +1552,7 @@
         "NG136-1.4.48",
         "NG136-1.4.40"
       ],
-      "latency_s": 7.6,
+      "latency_s": 6.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1582,7 +1581,7 @@
         "NG136-1.4.51",
         "NG136-1.4.42"
       ],
-      "latency_s": 7.3,
+      "latency_s": 5.9,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -1611,7 +1610,7 @@
         "NG136-1.4.33",
         "NG136-ctx-2"
       ],
-      "latency_s": 5.5
+      "latency_s": 6.3
     },
     {
       "id": "una-057",
@@ -1631,7 +1630,7 @@
         "NG28-ctx-50-part2",
         "NG28-1.6.5"
       ],
-      "latency_s": 2.9
+      "latency_s": 5.8
     },
     {
       "id": "una-058",
@@ -1651,7 +1650,7 @@
         "NG106-1.1.4",
         "NG106-ctx-7"
       ],
-      "latency_s": 4.0
+      "latency_s": 2.9
     },
     {
       "id": "una-059",
@@ -1691,7 +1690,7 @@
         "NG28-ctx-2",
         "NG28-1.7.1"
       ],
-      "latency_s": 3.0
+      "latency_s": 2.9
     },
     {
       "id": "una-061",
@@ -1711,7 +1710,7 @@
         "NG106-ctx-4",
         "NG106-1.9.6"
       ],
-      "latency_s": 3.0
+      "latency_s": 2.9
     },
     {
       "id": "una-062",
@@ -1733,7 +1732,7 @@
         "NG115-ctx-26",
         "NG115-table-5"
       ],
-      "latency_s": 5.0
+      "latency_s": 4.7
     },
     {
       "id": "una-063",
@@ -1753,7 +1752,7 @@
         "NG136-1.4.2",
         "NG136-1.4.19"
       ],
-      "latency_s": 3.1
+      "latency_s": 3.8
     },
     {
       "id": "una-064",

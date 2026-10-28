@@ -5,7 +5,7 @@
       "type": "answerable",
       "question": "Can prognostic risk tools be used to decide when to refer a patient with heart failure to palliative care services?",
       "mode": "vector",
-      "answer": "Prognostic risk tools should not be used to determine whether to refer a person with heart failure to palliative care services.",
+      "answer": "No prognostic risk tools can be used to determine whether to refer a person with heart failure to palliative care services.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -20,7 +20,7 @@
         "NG106-1.12.4",
         "NG106-1.12.1"
       ],
-      "latency_s": 15.2,
+      "latency_s": 5.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -34,11 +34,13 @@
       "type": "answerable",
       "question": "What factors can affect the levels of serum natriuretic peptides in patients with heart failure, and what other conditions can lead to high levels of these peptides?",
       "mode": "vector",
-      "answer": "I could not find a reliable answer in the guidelines.",
-      "answerable": false,
-      "verified": false,
-      "route": "unverified",
-      "citations": [],
+      "answer": "Factors that can affect the levels of serum natriuretic peptides in patients with heart failure include the use of certain medications such as diuretics, ACE inhibitors, ARNI, ARBs, beta-blockers, and MRAs. High levels of serum natriuretic peptides can also be caused by other conditions such as pulmonary, renal, liver, and systemic pathologies, sepsis, chronic obstructive pulmonary disease, diabetes, or cirrhosis of the liver.",
+      "answerable": true,
+      "verified": true,
+      "route": "answer",
+      "citations": [
+        "NG106-1.2.7"
+      ],
       "attempts": 2,
       "retrieved_top5": [
         "NG106-1.2.7",
@@ -47,12 +49,14 @@
         "NG106-1.2.2",
         "NG106-1.2.3"
       ],
-      "latency_s": 29.8,
+      "latency_s": 13.5,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
         "NG106-1.2.7"
-      ]
+      ],
+      "faithfulness": 0.1111111111111111,
+      "answer_relevance": 1.0
     },
     {
       "id": "ans-003",
@@ -74,7 +78,7 @@
         "NG106-1.1.7",
         "NG106-1.8.4"
       ],
-      "latency_s": 5.5,
+      "latency_s": 7.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -103,7 +107,7 @@
         "NG106-ctx-4",
         "NG106-1.5.4"
       ],
-      "latency_s": 3.7,
+      "latency_s": 5.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -132,7 +136,7 @@
         "NG106-1.4.6",
         "NG106-ctx-6"
       ],
-      "latency_s": 6.1,
+      "latency_s": 5.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -146,7 +150,7 @@
       "type": "answerable",
       "question": "What alternative treatment options should be considered for patients with angioedema who cannot tolerate ACE inhibitors in heart failure with reduced ejection fraction?",
       "mode": "vector",
-      "answer": "For patients with angioedema who cannot tolerate ACE inhibitors in heart failure with reduced ejection fraction, the guidelines recommend offering a beta-blocker, MRA, and SGLT2 inhibitor, and considering an ARB.",
+      "answer": "For patients with angioedema who cannot tolerate ACE inhibitors in heart failure with reduced ejection fraction, the guidelines suggest offering a beta-blocker, MRA, and SGLT2 inhibitor, and considering an ARB.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -161,7 +165,7 @@
         "NG106-ctx-3-part2",
         "NG106-1.5.1"
       ],
-      "latency_s": 6.9,
+      "latency_s": 3.5,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -190,7 +194,7 @@
         "NG106-1.2.8",
         "NG106-1.2.12"
       ],
-      "latency_s": 5.9,
+      "latency_s": 6.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -219,7 +223,7 @@
         "NG106-1.2.4",
         "NG106-1.2.2"
       ],
-      "latency_s": 7.1,
+      "latency_s": 7.4,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -291,7 +295,7 @@
       "type": "answerable",
       "question": "Can beta-blockers be prescribed to older patients or those with peripheral vascular disease?",
       "mode": "vector",
-      "answer": "Beta-blockers can be prescribed to older patients or those with peripheral vascular disease, as the guidelines do not recommend withholding treatment based on age or the presence of peripheral vascular disease.",
+      "answer": "Yes, beta-blockers can be prescribed to older patients or those with peripheral vascular disease. The guidelines state that treatment with a beta-blocker should not be withheld solely because of age or the presence of peripheral vascular disease.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -306,13 +310,13 @@
         "NG106-1.7.11",
         "NG106-ctx-3-part1"
       ],
-      "latency_s": 6.1,
+      "latency_s": 7.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
         "NG106-1.7.9"
       ],
-      "faithfulness": 0.5,
+      "faithfulness": 1.0,
       "answer_relevance": 1.0
     },
     {
@@ -335,7 +339,7 @@
         "NG106-1.3.2",
         "NG106-1.1.4"
       ],
-      "latency_s": 6.8,
+      "latency_s": 5.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -364,7 +368,7 @@
         "NG106-1.1.4",
         "NG106-1.1.3"
       ],
-      "latency_s": 6.9,
+      "latency_s": 7.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -393,7 +397,7 @@
         "NG115-1.2.95",
         "NG106-1.12.3"
       ],
-      "latency_s": 5.1,
+      "latency_s": 5.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -420,7 +424,7 @@
         "NG28-ctx-17-part1",
         "NG28-1.19.2"
       ],
-      "latency_s": 10.0,
+      "latency_s": 9.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -432,11 +436,14 @@
       "type": "answerable",
       "question": "What are the initial recommended medicines for adults with type 2 diabetes and no relevant comorbidities?",
       "mode": "vector",
-      "answer": "I could not find a reliable answer in the guidelines.",
-      "answerable": false,
-      "verified": false,
-      "route": "unverified",
-      "citations": [],
+      "answer": "The initial recommended medicines for adults with type 2 diabetes and no relevant comorbidities are modified-release metformin and an SGLT-2 inhibitor.",
+      "answerable": true,
+      "verified": true,
+      "route": "answer",
+      "citations": [
+        "NG28-1.13.1",
+        "NG28-ctx-17-part3"
+      ],
       "attempts": 2,
       "retrieved_top5": [
         "NG28-1.13.1",
@@ -445,12 +452,14 @@
         "NG28-ctx-43",
         "NG28-1.13.2"
       ],
-      "latency_s": 14.6,
+      "latency_s": 11.3,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
         "NG28-1.13.1"
-      ]
+      ],
+      "faithfulness": 1.0,
+      "answer_relevance": 1.0
     },
     {
       "id": "ans-017",
@@ -473,7 +482,7 @@
         "NG28-1.42.1",
         "NG28-1.37.1"
       ],
-      "latency_s": 7.5,
+      "latency_s": 10.4,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -503,7 +512,7 @@
         "NG28-1.2.7",
         "NG28-1.2.5"
       ],
-      "latency_s": 4.8,
+      "latency_s": 6.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -532,7 +541,7 @@
         "NG28-1.22.1",
         "NG28-1.3.9"
       ],
-      "latency_s": 7.4,
+      "latency_s": 5.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -546,7 +555,7 @@
       "type": "answerable",
       "question": "For a patient who experiences frequent hypoglycemia, which type of insulin preparation would be more appropriate according to the guideline?",
       "mode": "vector",
-      "answer": "For a patient who experiences frequent hypoglycemia, the guideline suggests considering pre-mixed preparations that include insulin analogues rather than human insulin. This is because the guideline mentions that such preparations should be considered if hypoglycaemia is a problem.",
+      "answer": "For a patient who experiences frequent hypoglycemia, the guideline suggests considering pre-mixed preparations that include insulin analogues rather than human insulin.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -561,7 +570,7 @@
         "NG28-1.33.2",
         "NG28-ctx-42-part2"
       ],
-      "latency_s": 5.4,
+      "latency_s": 6.3,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -591,7 +600,7 @@
         "NG28-ctx-11",
         "NG106-1.7.1"
       ],
-      "latency_s": 6.2,
+      "latency_s": 3.8,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -605,7 +614,7 @@
       "type": "answerable",
       "question": "How often should adults with type 2 diabetes have oral health reviews?",
       "mode": "vector",
-      "answer": "Adults with type 2 diabetes should have regular oral health reviews, with the frequency determined by their oral healthcare or dental team, in line with NICE's guideline on dental checks.",
+      "answer": "Adults with type 2 diabetes should have regular oral health reviews as advised by their oral healthcare or dental team, in line with NICE's guideline on dental checks: intervals between oral health reviews.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -620,7 +629,7 @@
         "NG28-1.37.4",
         "NG28-1.23.1"
       ],
-      "latency_s": 7.2,
+      "latency_s": 8.3,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -649,7 +658,7 @@
         "NG28-1.21.3",
         "NG28-ctx-17-part1"
       ],
-      "latency_s": 9.0,
+      "latency_s": 6.3,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -676,7 +685,7 @@
         "NG28-ctx-39",
         "NG28-ctx-8"
       ],
-      "latency_s": 10.2,
+      "latency_s": 12.2,
       "hit@5": false,
       "rr": 0.0,
       "expected_chunk_ids": [
@@ -704,7 +713,7 @@
         "NG28-1.7.1",
         "NG28-ctx-3-part1"
       ],
-      "latency_s": 7.8,
+      "latency_s": 9.7,
       "hit@5": false,
       "rr": 0.14285714285714285,
       "expected_chunk_ids": [
@@ -733,7 +742,7 @@
         "NG28-1.34.2",
         "NG28-ctx-42-part2"
       ],
-      "latency_s": 6.1,
+      "latency_s": 6.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -762,7 +771,7 @@
         "NG28-1.28.2",
         "NG28-ctx-51"
       ],
-      "latency_s": 5.9,
+      "latency_s": 5.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -793,13 +802,13 @@
         "NG28-1.7.3",
         "NG28-ctx-3-part4"
       ],
-      "latency_s": 7.3,
+      "latency_s": 5.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
         "NG28-1.7.1"
       ],
-      "faithfulness": 1.0,
+      "faithfulness": 0.8,
       "answer_relevance": 1.0
     },
     {
@@ -807,10 +816,10 @@
       "type": "answerable",
       "question": "Which investigation is recommended to assess cardiac status when there is suspicion of cardiac disease or pulmonary hypertension in COPD patients?",
       "mode": "vector",
-      "answer": "The guidelines do not provide a specific recommendation for an echocardiogram in the table. Instead, the table suggests an ECG and serum natriuretic peptides for assessing cardiac status.",
+      "answer": "I could not find a reliable answer in the guidelines.",
       "answerable": false,
-      "verified": true,
-      "route": "answer",
+      "verified": false,
+      "route": "unverified",
       "citations": [],
       "attempts": 2,
       "retrieved_top5": [
@@ -820,7 +829,7 @@
         "NG115-ctx-3",
         "NG115-ctx-4"
       ],
-      "latency_s": 9.3,
+      "latency_s": 8.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -847,13 +856,13 @@
         "NG115-1.1.21",
         "NG115-1.1.29"
       ],
-      "latency_s": 5.2,
+      "latency_s": 5.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
         "NG115-table-3"
       ],
-      "faithfulness": 1.0,
+      "faithfulness": 0.0,
       "answer_relevance": 1.0
     },
     {
@@ -877,7 +886,7 @@
         "NG115-1.2.142",
         "NG115-1.2.143"
       ],
-      "latency_s": 6.8,
+      "latency_s": 6.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -906,7 +915,7 @@
         "NG115-1.1.26",
         "NG115-1.1.14"
       ],
-      "latency_s": 3.5,
+      "latency_s": 6.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -935,7 +944,7 @@
         "NG115-1.1.2",
         "NG115-1.1.3"
       ],
-      "latency_s": 6.2,
+      "latency_s": 7.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -964,7 +973,7 @@
         "NG115-1.1.28",
         "NG115-1.1.8"
       ],
-      "latency_s": 6.8,
+      "latency_s": 5.1,
       "hit@5": true,
       "rr": 0.25,
       "expected_chunk_ids": [
@@ -978,7 +987,7 @@
       "type": "answerable",
       "question": "For which COPD patients is ambulatory oxygen therapy recommended according to this guideline?",
       "mode": "vector",
-      "answer": "Ambulatory oxygen therapy is recommended for people with COPD who have exercise desaturation and show an improvement in exercise capacity with oxygen, and who have the motivation to use oxygen. It is also recommended for people who are already on long-term oxygen therapy and wish to continue using it outside the home.",
+      "answer": "Ambulatory oxygen therapy is recommended for people with COPD who have exercise desaturation and show an improvement in exercise capacity with oxygen, and who have the motivation to use oxygen. It is also recommended for people already on long-term oxygen therapy who wish to continue using it outside the home and are prepared to use it.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -994,7 +1003,7 @@
         "NG115-1.2.73",
         "NG115-1.2.71"
       ],
-      "latency_s": 7.9,
+      "latency_s": 6.7,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -1023,7 +1032,7 @@
         "NG115-1.2.63",
         "NG115-ctx-18"
       ],
-      "latency_s": 5.3,
+      "latency_s": 7.4,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1052,13 +1061,13 @@
         "NG115-ctx-25",
         "NG115-1.2.91"
       ],
-      "latency_s": 6.0,
+      "latency_s": 5.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
         "NG115-1.2.137"
       ],
-      "faithfulness": 1.0,
+      "faithfulness": 0.5,
       "answer_relevance": 0.0
     },
     {
@@ -1088,7 +1097,7 @@
       "expected_chunk_ids": [
         "NG115-1.2.46"
       ],
-      "faithfulness": 0.8,
+      "faithfulness": 0.6,
       "answer_relevance": 0.6
     },
     {
@@ -1140,7 +1149,7 @@
         "NG115-1.3.35",
         "NG115-1.3.33"
       ],
-      "latency_s": 6.2,
+      "latency_s": 7.5,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1154,14 +1163,12 @@
       "type": "answerable",
       "question": "Is alpha-1 antitrypsin replacement therapy recommended for patients with alpha-1 antitrypsin deficiency?",
       "mode": "vector",
-      "answer": "Alpha-1 antitrypsin replacement therapy is not recommended for people with alpha-1 antitrypsin deficiency.",
-      "answerable": true,
+      "answer": "The guidelines provided do not answer the question.",
+      "answerable": false,
       "verified": true,
       "route": "answer",
-      "citations": [
-        "NG115-1.2.97"
-      ],
-      "attempts": 1,
+      "citations": [],
+      "attempts": 2,
       "retrieved_top5": [
         "NG115-1.2.97",
         "NG115-1.1.17",
@@ -1169,25 +1176,26 @@
         "NG106-1.4.9",
         "NG106-1.4.12"
       ],
-      "latency_s": 5.9,
+      "latency_s": 307.4,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
         "NG115-1.2.97"
-      ],
-      "faithfulness": null,
-      "answer_relevance": 0.0
+      ]
     },
     {
       "id": "ans-042",
       "type": "answerable",
       "question": "What is the blood pressure target for a person under 80 with hypertension and type 2 diabetes?",
       "mode": "vector",
-      "answer": "The guidelines provided do not answer the question about the blood pressure target for a person under 80 with hypertension and type 2 diabetes.",
-      "answerable": false,
+      "answer": "The blood pressure target for a person under 80 with hypertension and type 2 diabetes is below 140/90 mmHg.",
+      "answerable": true,
       "verified": true,
       "route": "answer",
-      "citations": [],
+      "citations": [
+        "NG136-table-1",
+        "NG136-1.4.20"
+      ],
       "attempts": 2,
       "retrieved_top5": [
         "NG136-table-2",
@@ -1196,12 +1204,14 @@
         "NG136-1.4.21",
         "NG136-ctx-9"
       ],
-      "latency_s": 308.7,
+      "latency_s": 308.9,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
         "NG136-table-1"
-      ]
+      ],
+      "faithfulness": 1.0,
+      "answer_relevance": 1.0
     },
     {
       "id": "ans-043",
@@ -1223,7 +1233,7 @@
         "NG136-1.4.49",
         "NG136-1.4.21"
       ],
-      "latency_s": 6.5,
+      "latency_s": 9.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1252,7 +1262,7 @@
         "NG136-1.5.1",
         "NG136-1.4.22"
       ],
-      "latency_s": 5.1,
+      "latency_s": 5.8,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -1266,7 +1276,7 @@
       "type": "answerable",
       "question": "Which type of antihypertensive drugs are recommended for adults with resistant hypertension and a potassium level over 4.5 mmol/l during step 4 treatment?",
       "mode": "vector",
-      "answer": "Alpha-blockers or beta-blockers are recommended for adults with resistant hypertension starting step 4 treatment who have a blood potassium level of more than 4.5 mmol/l.",
+      "answer": "Alpha-blockers or beta-blockers are recommended for adults with resistant hypertension and a potassium level over 4.5 mmol/l during step 4 treatment.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -1281,7 +1291,7 @@
         "NG136-1.4.50",
         "NG136-1.4.46"
       ],
-      "latency_s": 6.0,
+      "latency_s": 3.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1310,7 +1320,7 @@
         "NG136-1.4.44",
         "NG136-1.4.15"
       ],
-      "latency_s": 6.6,
+      "latency_s": 5.7,
       "hit@5": true,
       "rr": 0.2,
       "expected_chunk_ids": [
@@ -1339,7 +1349,7 @@
         "NG136-ctx-12",
         "NG136-1.4.43"
       ],
-      "latency_s": 6.4,
+      "latency_s": 6.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1371,7 +1381,7 @@
         "NG136-1.4.8",
         "NG136-1.4.12"
       ],
-      "latency_s": 8.5,
+      "latency_s": 6.9,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -1398,7 +1408,7 @@
         "NG136-1.2.10",
         "NG136-1.2.3"
       ],
-      "latency_s": 10.2,
+      "latency_s": 9.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1425,7 +1435,7 @@
         "NG136-1.1.7",
         "NG136-1.5.1"
       ],
-      "latency_s": 7.9,
+      "latency_s": 6.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1458,7 +1468,7 @@
         "NG136-1.4.8",
         "NG136-1.4.4"
       ],
-      "latency_s": 7.0,
+      "latency_s": 7.5,
       "hit@5": false,
       "rr": 0.1111111111111111,
       "expected_chunk_ids": [
@@ -1487,7 +1497,7 @@
         "NG136-1.4.50",
         "NG136-1.4.46"
       ],
-      "latency_s": 5.7,
+      "latency_s": 5.5,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -1546,7 +1556,7 @@
         "NG136-1.4.48",
         "NG136-1.4.52"
       ],
-      "latency_s": 6.1,
+      "latency_s": 6.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1575,7 +1585,7 @@
         "NG136-1.4.42",
         "NG136-1.4.41"
       ],
-      "latency_s": 7.1,
+      "latency_s": 6.9,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -1604,7 +1614,7 @@
         "NG136-1.4.48",
         "NG136-ctx-2"
       ],
-      "latency_s": 8.6
+      "latency_s": 5.9
     },
     {
       "id": "una-057",
@@ -1624,7 +1634,7 @@
         "NG28-ctx-49",
         "NG28-ctx-55"
       ],
-      "latency_s": 8.8
+      "latency_s": 6.1
     },
     {
       "id": "una-058",
@@ -1711,14 +1721,12 @@
       "type": "unanswerable",
       "question": "What are the eligibility criteria for a lung transplant in COPD?",
       "mode": "vector",
-      "answer": "The eligibility criteria for a lung transplant in COPD include having severe COPD with FEV1 less than 50%, breathlessness that affects quality of life despite optimal medical treatment, not smoking, and not having contraindications for transplantation.",
-      "answerable": true,
-      "verified": true,
-      "route": "answer",
-      "citations": [
-        "NG115-1.2.95"
-      ],
-      "attempts": 1,
+      "answer": "I could not find a reliable answer in the guidelines.",
+      "answerable": false,
+      "verified": false,
+      "route": "unverified",
+      "citations": [],
+      "attempts": 2,
       "retrieved_top5": [
         "NG115-1.2.95",
         "NG115-ctx-25",
@@ -1726,7 +1734,7 @@
         "NG115-1.2.90",
         "NG115-ctx-26"
       ],
-      "latency_s": 4.5
+      "latency_s": 10.1
     },
     {
       "id": "una-063",
@@ -1746,7 +1754,7 @@
         "NG136-1.4.5",
         "NG136-1.4.49"
       ],
-      "latency_s": 4.1
+      "latency_s": 5.7
     },
     {
       "id": "una-064",
@@ -1766,7 +1774,7 @@
         "NG28-1.5.7",
         "NG28-1.35.1"
       ],
-      "latency_s": 2.9
+      "latency_s": 5.0
     },
     {
       "id": "una-065",
@@ -1786,7 +1794,7 @@
         "NG115-1.1.20",
         "NG115-table-3"
       ],
-      "latency_s": 2.9
+      "latency_s": 2.8
     },
     {
       "id": "una-066",
@@ -1806,7 +1814,7 @@
         "NG28-ctx-46",
         "NG28-ctx-17-part2"
       ],
-      "latency_s": 3.0
+      "latency_s": 3.1
     },
     {
       "id": "una-067",
@@ -1826,7 +1834,7 @@
         "NG106-ctx-5",
         "NG106-1.4.6"
       ],
-      "latency_s": 3.2
+      "latency_s": 3.0
     },
     {
       "id": "una-068",

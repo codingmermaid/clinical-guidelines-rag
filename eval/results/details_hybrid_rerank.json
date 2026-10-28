@@ -20,7 +20,7 @@
         "NG106-1.2.3",
         "NG106-1.12.4"
       ],
-      "latency_s": 35.2,
+      "latency_s": 18.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -47,7 +47,7 @@
         "NG106-ctx-14-part1",
         "NG106-1.8.5"
       ],
-      "latency_s": 49.7,
+      "latency_s": 30.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -72,7 +72,7 @@
         "NG106-1.1.1",
         "NG106-1.1.8"
       ],
-      "latency_s": 14.1,
+      "latency_s": 13.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -99,7 +99,7 @@
         "NG106-ctx-9",
         "NG106-1.4.12"
       ],
-      "latency_s": 11.2,
+      "latency_s": 11.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -128,7 +128,7 @@
         "NG106-1.4.5",
         "NG106-1.4.6"
       ],
-      "latency_s": 9.4,
+      "latency_s": 9.9,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -157,7 +157,7 @@
         "NG106-1.4.4",
         "NG106-ctx-9"
       ],
-      "latency_s": 9.4,
+      "latency_s": 9.5,
       "hit@5": true,
       "rr": 0.25,
       "expected_chunk_ids": [
@@ -186,7 +186,7 @@
         "NG106-ctx-3-part2",
         "NG106-ctx-4"
       ],
-      "latency_s": 11.8,
+      "latency_s": 11.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -200,7 +200,7 @@
       "type": "answerable",
       "question": "What should be done if a patient with NT-proBNP levels below 400 ng/L still shows symptoms suggestive of heart failure?",
       "mode": "hybrid_rerank",
-      "answer": "If a patient with NT-proBNP levels below 400 ng/L still shows symptoms suggestive of heart failure, alternative causes should be reviewed, and if there is still concern, the patient should be discussed with a physician with subspeciality training in heart failure.",
+      "answer": "If a patient with NT-proBNP levels below 400 ng/L still shows symptoms suggestive of heart failure, the guidelines recommend reviewing alternative causes for the symptoms and discussing with a physician with subspeciality training in heart failure.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -215,13 +215,13 @@
         "NG106-1.2.3",
         "NG106-1.8.4"
       ],
-      "latency_s": 11.2,
+      "latency_s": 11.4,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
         "NG106-1.2.6"
       ],
-      "faithfulness": 1.0,
+      "faithfulness": 0.5,
       "answer_relevance": 1.0
     },
     {
@@ -244,7 +244,7 @@
         "NG106-ctx-19",
         "NG106-ctx-7"
       ],
-      "latency_s": 11.0,
+      "latency_s": 11.3,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -273,7 +273,7 @@
         "NG136-1.5.3",
         "NG136-1.5.2"
       ],
-      "latency_s": 10.8,
+      "latency_s": 11.0,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -302,7 +302,7 @@
         "NG106-1.4.4",
         "NG136-ctx-21"
       ],
-      "latency_s": 10.7,
+      "latency_s": 10.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -332,7 +332,7 @@
         "NG106-ctx-1",
         "NG28-ctx-50-part2"
       ],
-      "latency_s": 12.8,
+      "latency_s": 14.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -361,7 +361,7 @@
         "NG106-1.3.2",
         "NG106-1.1.1"
       ],
-      "latency_s": 7.7,
+      "latency_s": 7.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -390,7 +390,7 @@
         "NG115-1.2.95",
         "NG136-1.5.1"
       ],
-      "latency_s": 9.4,
+      "latency_s": 9.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -417,7 +417,7 @@
         "NG28-ctx-23-part3",
         "NG28-ctx-24"
       ],
-      "latency_s": 10.6,
+      "latency_s": 10.8,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -442,7 +442,7 @@
         "NG28-1.13.2",
         "NG28-ctx-25-part1"
       ],
-      "latency_s": 18.0,
+      "latency_s": 17.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -471,7 +471,7 @@
         "NG28-1.3.3",
         "NG28-1.42.1"
       ],
-      "latency_s": 14.6,
+      "latency_s": 14.4,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -501,7 +501,7 @@
         "NG28-1.2.7",
         "NG28-1.2.5"
       ],
-      "latency_s": 13.6,
+      "latency_s": 14.2,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -544,14 +544,12 @@
       "type": "answerable",
       "question": "For a patient who experiences frequent hypoglycemia, which type of insulin preparation would be more appropriate according to the guideline?",
       "mode": "hybrid_rerank",
-      "answer": "For a patient who experiences frequent hypoglycemia, the guideline suggests considering basal insulin preparations that are longer acting, as they may be more suitable to reduce the risk of nocturnal hypoglycaemia.",
+      "answer": "For a patient who experiences frequent hypoglycemia, the guideline suggests that a longer acting basal insulin might be more suitable.",
       "answerable": true,
       "verified": true,
       "route": "answer",
       "citations": [
-        "NG28-ctx-61",
-        "NG28-ctx-63",
-        "NG28-ctx-59"
+        "NG28-ctx-61"
       ],
       "attempts": 1,
       "retrieved_top5": [
@@ -561,7 +559,7 @@
         "NG28-1.34.2",
         "NG28-ctx-59"
       ],
-      "latency_s": 14.2,
+      "latency_s": 13.0,
       "hit@5": true,
       "rr": 0.25,
       "expected_chunk_ids": [
@@ -592,7 +590,7 @@
         "NG28-1.11.2",
         "NG106-1.7.10"
       ],
-      "latency_s": 12.3,
+      "latency_s": 11.9,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -606,7 +604,7 @@
       "type": "answerable",
       "question": "How often should adults with type 2 diabetes have oral health reviews?",
       "mode": "hybrid_rerank",
-      "answer": "Adults with type 2 diabetes should have regular oral health reviews, with the frequency determined by their oral healthcare or dental team in line with NICE's guideline on dental checks.",
+      "answer": "Adults with type 2 diabetes should have regular oral health reviews, with the frequency determined by their oral healthcare or dental team, in line with NICE's guideline on dental checks: intervals between oral health reviews.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -621,7 +619,7 @@
         "NG28-1.37.1",
         "NG28-1.6.5"
       ],
-      "latency_s": 14.2,
+      "latency_s": 13.9,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -650,7 +648,7 @@
         "NG28-ctx-33",
         "NG28-ctx-18"
       ],
-      "latency_s": 12.4,
+      "latency_s": 12.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -664,11 +662,15 @@
       "type": "answerable",
       "question": "How should a clinician approach the review of a patient's medication regimen? ",
       "mode": "hybrid_rerank",
-      "answer": "I could not find a reliable answer in the guidelines.",
-      "answerable": false,
-      "verified": false,
-      "route": "unverified",
-      "citations": [],
+      "answer": "A clinician should optimise the current treatment regimen before changing treatments, considering factors such as adverse effects, prescribed doses and formulations, adherence to, and management of existing medicines, and the need to revisit advice about diet and healthy living. The frequency of monitoring should be determined based on the person's clinical status and the stability of their condition. If the condition or medication has changed, a short timeframe for monitoring (days to every 2 weeks) should be used. For stable people, monitoring should occur at least every 6 months.",
+      "answerable": true,
+      "verified": true,
+      "route": "answer",
+      "citations": [
+        "NG28-1.22.2",
+        "NG106-1.8.3",
+        "NG106-1.8.2"
+      ],
       "attempts": 2,
       "retrieved_top5": [
         "NG28-1.22.2",
@@ -677,12 +679,14 @@
         "NG106-1.8.2",
         "NG106-1.7.1"
       ],
-      "latency_s": 23.4,
+      "latency_s": 23.2,
       "hit@5": false,
       "rr": 0.0,
       "expected_chunk_ids": [
         "NG28-1.1.2"
-      ]
+      ],
+      "faithfulness": 0.6,
+      "answer_relevance": 1.0
     },
     {
       "id": "ans-025",
@@ -704,7 +708,7 @@
         "NG28-1.7.3",
         "NG28-1.7.2"
       ],
-      "latency_s": 9.7,
+      "latency_s": 9.9,
       "hit@5": true,
       "rr": 0.2,
       "expected_chunk_ids": [
@@ -733,7 +737,7 @@
         "NG28-1.33.2",
         "NG28-1.33.1"
       ],
-      "latency_s": 14.3,
+      "latency_s": 11.4,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -791,7 +795,7 @@
         "NG28-1.7.3",
         "NG28-ctx-4"
       ],
-      "latency_s": 9.7,
+      "latency_s": 9.5,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -805,7 +809,7 @@
       "type": "answerable",
       "question": "Which investigation is recommended to assess cardiac status when there is suspicion of cardiac disease or pulmonary hypertension in COPD patients?",
       "mode": "hybrid_rerank",
-      "answer": "The guidelines do not provide a specific recommendation for an echocardiogram in the context of assessing cardiac status when there is suspicion of cardiac disease or pulmonary hypertension in COPD patients.",
+      "answer": "The guidelines do not provide a specific recommendation for an echocardiogram in the table cited.",
       "answerable": false,
       "verified": true,
       "route": "answer",
@@ -818,7 +822,7 @@
         "NG28-ctx-11",
         "NG115-1.1.15"
       ],
-      "latency_s": 14.3,
+      "latency_s": 18.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -845,7 +849,7 @@
         "NG115-ctx-1",
         "NG115-1.1.1"
       ],
-      "latency_s": 17.2,
+      "latency_s": 10.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -875,7 +879,7 @@
         "NG115-1.2.139",
         "NG115-ctx-30"
       ],
-      "latency_s": 11.7,
+      "latency_s": 15.5,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -889,7 +893,7 @@
       "type": "answerable",
       "question": "What should clinicians do when diagnosing COPD in individuals with mild airflow obstruction based on symptoms alone?",
       "mode": "hybrid_rerank",
-      "answer": "Clinicians should only diagnose COPD in individuals with mild airflow obstruction if they have one or more of the specified symptoms.",
+      "answer": "Clinicians should diagnose COPD in individuals with mild airflow obstruction only if they have one or more of the specified symptoms.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -904,14 +908,14 @@
         "NG115-1.1.2",
         "NG115-ctx-8"
       ],
-      "latency_s": 10.2,
+      "latency_s": 11.5,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
         "NG115-1.1.27"
       ],
-      "faithfulness": 0.0,
-      "answer_relevance": 0.5
+      "faithfulness": 1.0,
+      "answer_relevance": 0.0
     },
     {
       "id": "ans-033",
@@ -934,7 +938,7 @@
         "NG115-1.1.25",
         "NG115-ctx-21"
       ],
-      "latency_s": 12.4,
+      "latency_s": 12.2,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -963,7 +967,7 @@
         "NG115-1.1.9",
         "NG115-ctx-1"
       ],
-      "latency_s": 14.1,
+      "latency_s": 15.3,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -977,7 +981,7 @@
       "type": "answerable",
       "question": "For which COPD patients is ambulatory oxygen therapy recommended according to this guideline?",
       "mode": "hybrid_rerank",
-      "answer": "Ambulatory oxygen therapy is recommended for people with COPD who have exercise desaturation and show an improvement in exercise capacity with oxygen, and who have the motivation to use oxygen. It is also recommended for people who are already on long-term oxygen therapy and wish to continue using it outside the home, provided they are prepared to use it.",
+      "answer": "Ambulatory oxygen therapy is recommended for people with COPD who have exercise desaturation and show an improvement in exercise capacity with oxygen, and who have the motivation to use oxygen. It is also recommended for people already on long-term oxygen therapy who wish to continue using it outside the home and are prepared to use it.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -1022,7 +1026,7 @@
         "NG115-1.2.58",
         "NG115-ctx-22"
       ],
-      "latency_s": 11.8,
+      "latency_s": 9.4,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1051,7 +1055,7 @@
         "NG115-1.2.94",
         "NG115-ctx-25"
       ],
-      "latency_s": 10.1,
+      "latency_s": 10.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1081,14 +1085,14 @@
         "NG115-1.2.44",
         "NG115-1.2.139"
       ],
-      "latency_s": 18.8,
+      "latency_s": 18.9,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
         "NG115-1.2.46"
       ],
-      "faithfulness": 0.8,
-      "answer_relevance": 0.4
+      "faithfulness": 0.6,
+      "answer_relevance": 0.2
     },
     {
       "id": "ans-039",
@@ -1110,7 +1114,7 @@
         "NG115-1.1.12",
         "NG136-1.5.1"
       ],
-      "latency_s": 12.5,
+      "latency_s": 12.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1168,7 +1172,7 @@
         "NG115-table-2",
         "NG115-1.1.14"
       ],
-      "latency_s": 11.6,
+      "latency_s": 11.4,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1197,7 +1201,7 @@
         "NG136-1.4.21",
         "NG136-table-2"
       ],
-      "latency_s": 17.7,
+      "latency_s": 17.5,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -1226,7 +1230,7 @@
         "NG136-1.4.39",
         "NG136-1.4.13"
       ],
-      "latency_s": 8.8,
+      "latency_s": 9.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1255,7 +1259,7 @@
         "NG136-1.4.22",
         "NG136-1.4.18"
       ],
-      "latency_s": 6.3,
+      "latency_s": 8.6,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1284,7 +1288,7 @@
         "NG136-1.4.48",
         "NG136-1.4.50"
       ],
-      "latency_s": 7.3,
+      "latency_s": 8.7,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -1313,7 +1317,7 @@
         "NG136-1.4.10",
         "NG136-1.4.24"
       ],
-      "latency_s": 8.0,
+      "latency_s": 10.6,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -1371,7 +1375,7 @@
         "NG136-1.4.10",
         "NG136-1.4.3"
       ],
-      "latency_s": 9.2,
+      "latency_s": 8.8,
       "hit@5": true,
       "rr": 0.3333333333333333,
       "expected_chunk_ids": [
@@ -1398,7 +1402,7 @@
         "NG136-1.1.4",
         "NG136-1.2.7"
       ],
-      "latency_s": 13.1,
+      "latency_s": 13.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1410,7 +1414,7 @@
       "type": "answerable",
       "question": "What should be done if a patient's blood pressure drops significantly after standing up?",
       "mode": "hybrid_rerank",
-      "answer": "If a patient's blood pressure drops significantly after standing up, the healthcare provider should consider likely causes, including reviewing their current medication, manage appropriately (for example, for advice on preventing falls in older people, see NICE's guideline on falls in older people: assessing risk and prevention), measure subsequent blood pressures with the patient standing, and consider referral to specialist care if symptoms of postural hypotension persist despite addressing likely causes.",
+      "answer": "If a patient's blood pressure drops significantly after standing up, the healthcare provider should consider likely causes, including reviewing their current medication, manage appropriately, measure subsequent blood pressures with the patient standing, and consider referral to specialist care if symptoms persist.",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -1425,14 +1429,14 @@
         "NG136-1.4.16",
         "NG136-1.1.7"
       ],
-      "latency_s": 15.2,
+      "latency_s": 14.7,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
         "NG136-1.1.6"
       ],
       "faithfulness": 1.0,
-      "answer_relevance": 0.8333333333333334
+      "answer_relevance": 1.0
     },
     {
       "id": "ans-051",
@@ -1456,7 +1460,7 @@
         "NG136-1.4.4",
         "NG136-ctx-6"
       ],
-      "latency_s": 15.0,
+      "latency_s": 14.2,
       "hit@5": false,
       "rr": 0.08333333333333333,
       "expected_chunk_ids": [
@@ -1485,7 +1489,7 @@
         "NG136-1.4.47",
         "NG136-1.4.50"
       ],
-      "latency_s": 7.2,
+      "latency_s": 8.9,
       "hit@5": true,
       "rr": 0.5,
       "expected_chunk_ids": [
@@ -1499,7 +1503,7 @@
       "type": "answerable",
       "question": "When should a patient with hypertension be referred for same-day specialist review?",
       "mode": "hybrid_rerank",
-      "answer": "A patient with hypertension should be referred for same-day specialist review if they have a clinic blood pressure of 180/120 mmHg or higher with signs of retinal haemorrhage or papilloedema, life-threatening symptoms such as new onset confusion, chest pain, signs of heart failure, or acute kidney injury. Additionally, they should be referred if they have suspected phaeochromocytoma.",
+      "answer": "A patient with hypertension should be referred for same-day specialist review if they have a clinic blood pressure of 180/120 mmHg and higher with signs of retinal haemorrhage or papilloedema (accelerated hypertension) or life-threatening symptoms such as new onset confusion, chest pain, signs of heart failure, or acute kidney injury. Additionally, they should be referred if they have suspected phaeochromocytoma (for example, labile or postural hypotension, headache, palpitations, pallor, abdominal pain or diaphoresis).",
       "answerable": true,
       "verified": true,
       "route": "answer",
@@ -1515,7 +1519,7 @@
         "NG136-ctx-18",
         "NG136-ctx-3"
       ],
-      "latency_s": 9.4,
+      "latency_s": 14.3,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1544,7 +1548,7 @@
         "NG136-1.4.49",
         "NG136-1.4.48"
       ],
-      "latency_s": 7.3,
+      "latency_s": 8.2,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1573,7 +1577,7 @@
         "NG136-1.4.35",
         "NG136-1.4.33"
       ],
-      "latency_s": 8.2,
+      "latency_s": 11.1,
       "hit@5": true,
       "rr": 1.0,
       "expected_chunk_ids": [
@@ -1602,7 +1606,7 @@
         "NG136-ctx-13",
         "NG136-1.2.6"
       ],
-      "latency_s": 8.3
+      "latency_s": 8.1
     },
     {
       "id": "una-057",
@@ -1622,7 +1626,7 @@
         "NG28-1.28.2",
         "NG28-ctx-42-part2"
       ],
-      "latency_s": 12.0
+      "latency_s": 8.7
     },
     {
       "id": "una-058",
@@ -1642,7 +1646,7 @@
         "NG106-1.2.4",
         "NG106-ctx-9"
       ],
-      "latency_s": 11.9
+      "latency_s": 12.0
     },
     {
       "id": "una-059",
@@ -1662,7 +1666,7 @@
         "NG115-1.2.12",
         "NG115-1.2.23"
       ],
-      "latency_s": 14.9
+      "latency_s": 14.3
     },
     {
       "id": "una-060",
@@ -1682,7 +1686,7 @@
         "NG28-1.5.9",
         "NG28-1.5.6"
       ],
-      "latency_s": 14.2
+      "latency_s": 14.0
     },
     {
       "id": "una-061",
@@ -1702,7 +1706,7 @@
         "NG106-1.4.8",
         "NG106-ctx-4"
       ],
-      "latency_s": 12.4
+      "latency_s": 14.3
     },
     {
       "id": "una-062",
@@ -1724,7 +1728,7 @@
         "NG115-ctx-26",
         "NG115-1.2.94"
       ],
-      "latency_s": 14.0
+      "latency_s": 20.1
     },
     {
       "id": "una-063",
@@ -1744,7 +1748,7 @@
         "NG136-1.4.49",
         "NG136-1.4.38"
       ],
-      "latency_s": 13.0
+      "latency_s": 22.8
     },
     {
       "id": "una-064",
@@ -1764,7 +1768,7 @@
         "NG28-1.7.2",
         "NG28-1.28.3"
       ],
-      "latency_s": 11.6
+      "latency_s": 17.5
     },
     {
       "id": "una-065",
@@ -1784,7 +1788,7 @@
         "NG115-1.1.15",
         "NG115-table-3"
       ],
-      "latency_s": 14.2
+      "latency_s": 18.7
     },
     {
       "id": "una-066",
@@ -1804,7 +1808,7 @@
         "NG28-ctx-41",
         "NG28-ctx-50-part2"
       ],
-      "latency_s": 13.6
+      "latency_s": 24.2
     },
     {
       "id": "una-067",
@@ -1824,7 +1828,7 @@
         "NG106-1.2.7",
         "NG106-1.9.5"
       ],
-      "latency_s": 13.5
+      "latency_s": 21.0
     },
     {
       "id": "una-068",
@@ -1844,7 +1848,7 @@
         "NG28-ctx-33",
         "NG28-ctx-46"
       ],
-      "latency_s": 14.5
+      "latency_s": 18.5
     },
     {
       "id": "una-069",
@@ -1864,7 +1868,7 @@
         "NG106-1.9.8",
         "NG115-ctx-8"
       ],
-      "latency_s": 15.3
+      "latency_s": 22.4
     },
     {
       "id": "una-070",
@@ -1884,7 +1888,7 @@
         "NG136-1.4.29",
         "NG136-ctx-12"
       ],
-      "latency_s": 12.5
+      "latency_s": 19.6
     }
   ],
   "guardrails": [
