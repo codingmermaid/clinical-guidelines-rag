@@ -1,0 +1,5 @@
+mode,hit_rate@5,mrr,faithfulness,answer_relevance,citation_valid_final,citation_valid_first,refusal_accuracy,wrong_refusal_rate,guardrail_accuracy,avg_latency_s
+vector,0.945,0.801,0.9,0.873,0.909,0.909,0.867,0.127,1.0,11.0
+bm25,0.909,0.781,0.851,0.85,0.947,0.93,0.8,0.073,1.0,4.563
+hybrid,0.945,0.836,0.876,0.885,0.93,0.895,0.867,0.073,1.0,6.346
+hybrid_rerank,0.964,0.778,0.845,0.881,0.926,0.926,0.867,0.127,1.0,12.907

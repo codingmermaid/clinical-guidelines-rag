@@ -121,7 +121,46 @@ The downloader reads each guideline's chapter menu, so it copes with NICE's two 
 
 ## 5. Evaluation
 
-RESULTS_PLACEHOLDER
+The test set (`eval/testset.json`) has 80 items: 55 answerable questions drafted by the local model from
+sampled guideline passages, 15 hand-written questions the guidelines cannot answer, and 10 guardrail
+questions. **All 80 items are still marked `reviewed: false`, so treat these numbers as provisional**
+until a human has checked the test set. Reproduce with `python eval/run_eval.py`
+(about 50 minutes on an RTX 4070 SUPER; `--limit 5` gives a quick smoke test).
+
+| Retrieval mode | Hit rate@5 | MRR | Faithfulness | Answer relevance | Citation valid | Refusal accuracy | Wrongly refused | Guardrail acc. |
+|---|---|---|---|---|---|---|---|---|
+| vector only | 0.945 | 0.801 | 0.900 | 0.873 | 0.909 | 0.867 | 0.127 | 1.0 |
+| BM25 only | 0.909 | 0.781 | 0.851 | 0.850 | 0.947 | 0.800 | 0.073 | 1.0 |
+| hybrid (RRF) | 0.945 | 0.836 | 0.876 | 0.885 | 0.930 | 0.867 | 0.073 | 1.0 |
+| hybrid + rerank | 0.964 | 0.778 | 0.845 | 0.881 | 0.926 | 0.867 | 0.127 | 1.0 |
+
+![Comparison of retrieval modes](eval/results/comparison.png)
+
+How to read this:
+
+- **Hit rate@5** is the share of answerable questions whose expected passage is among the top 5 results;
+  **MRR** rewards ranking it higher. **Faithfulness** and **answer relevance** are scored by DeepEval with the
+  local model as judge. **Citation valid** is the share of produced answers whose citations pass the code
+  checks. **Refusal accuracy** is the share of unanswerable questions correctly declined, and
+  **wrongly refused** is the share of answerable questions declined.
+- **The four modes are close.** With 55 answerable questions, one question is worth about 1.8 points, so
+  most gaps here are within noise. Do not conclude that one mode is "the best" from this run alone.
+- **Hybrid had the best MRR (0.84)**: combining keyword and meaning search put the expected passage
+  higher more often than either alone.
+- **Reranking found the expected passage in the top 5 most often (0.96) but ranked it first less often
+  (MRR 0.78).** The general-purpose cross-encoder sometimes pushes the exact source down in favour of
+  background text that mentions the same words. Mixed results like this are a real lesson: a reranker is
+  not automatically better, and it is the slowest option.
+- **Keyword-only search is the fastest and weakest at hit rate**, but it wrongly refuses the fewest questions.
+- Guardrail routing was correct on all 10 guardrail questions, which is a small sample.
+- Refusal accuracy of 0.80 to 0.87 means the model sometimes answers a question the guidelines do not
+  cover, using a loosely related passage. Faithfulness of about 0.85 to 0.90 means some answers include
+  a claim the judge could not find in the retrieved text. This is why the interface always shows the
+  source passage.
+- Latency (not in the table; see `eval/results/summary.csv`) was measured with two questions running at
+  once, so it is only a rough guide: BM25 was fastest, reranking slowest.
+
+Full per-question results are in `eval/results/details_<mode>.json`.
 
 ## 6. Known limitations
 
