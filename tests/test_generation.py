@@ -1,4 +1,4 @@
-"""Tests for citation verification (no LLM needed) plus an end-to-end check (needs Ollama)."""
+﻿"""Tests for citation verification (no LLM needed) plus an end-to-end check (needs Ollama)."""
 
 import pytest
 
@@ -60,14 +60,14 @@ def test_unanswerable_needs_no_citation():
 def test_bad_llm_output_gives_safe_response(monkeypatch):
     import guideline_rag.generation as g
     bad = LLMAnswer(answer="x", citations=["nope"], supporting_quotes=["made up"], answerable=True)
-    monkeypatch.setattr(g, "_ask_llm", lambda messages: bad)
+    monkeypatch.setattr(g, "_ask_llm", lambda messages, **kw: bad)
     out = generate_answer("q", PASSAGES)
     assert out.answer == g.SAFE_ANSWER and not out.verified and not out.answerable
 
 
 def test_junk_answer_text_is_replaced_when_unanswerable(monkeypatch):
     import guideline_rag.generation as g
-    monkeypatch.setattr(g, "_ask_llm", lambda m: LLMAnswer(answer="false", citations=[],
+    monkeypatch.setattr(g, "_ask_llm", lambda m, **kw: LLMAnswer(answer="false", citations=[],
                                                           supporting_quotes=[], answerable=False))
     out = generate_answer("q", PASSAGES)
     assert out.answer == g.NOT_ANSWERABLE and not out.answerable and out.verified
@@ -78,6 +78,7 @@ def test_retry_succeeds_after_correction(monkeypatch):
     replies = iter([LLMAnswer(answer="x", citations=["nope"], supporting_quotes=["made up"], answerable=True),
                     LLMAnswer(answer="Offer ACE inhibitors.", citations=["NG106-1.4.1"],
                               supporting_quotes=["Offer an ACE inhibitor"], answerable=True)])
-    monkeypatch.setattr(g, "_ask_llm", lambda messages: next(replies))
+    monkeypatch.setattr(g, "_ask_llm", lambda messages, **kw: next(replies))
     out = generate_answer("q", PASSAGES)
     assert out.verified and out.citations == ["NG106-1.4.1"] and out.sources[0].chunk_id == "NG106-1.4.1"
+

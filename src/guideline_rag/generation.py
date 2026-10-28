@@ -23,6 +23,7 @@ from guideline_rag.retrieval import Retrieved
 
 SAFE_ANSWER = "I could not find a reliable answer in the guidelines."
 NOT_ANSWERABLE = "The guidelines provided do not answer this question."
+RETRY_TEMPERATURE = 0.4
 
 SYSTEM_PROMPT = """You are an assistant that explains public clinical guidelines for learning purposes.
 
@@ -123,11 +124,11 @@ def format_passages(retrieved: list[Retrieved]) -> str:
     return "\n\n".join(blocks)
 
 
-def _ask_llm(messages: list[dict]) -> LLMAnswer:
+def _ask_llm(messages: list[dict], temperature: float = 0.0) -> LLMAnswer:
     cfg = load_config()["models"]
     client = ollama.Client(host=cfg["ollama_url"], timeout=300)
     reply = client.chat(model=cfg["llm"], messages=messages, format=LLMAnswer.model_json_schema(),
-                        options={"temperature": 0})
+                        options={"temperature": temperature})
     return LLMAnswer.model_validate_json(reply["message"]["content"])
 
 
@@ -144,7 +145,9 @@ def generate_answer(question: str, retrieved: list[Retrieved], extra_instruction
     for attempt in range(2):  # first try + one retry
         used += 1
         try:
-            result = _ask_llm(messages)
+            # The first try is deterministic (temperature 0). The retry adds some randomness, because
+            # repeating an identical request at temperature 0 would just repeat the same mistake.
+            result = _ask_llm(messages, temperature=0.0 if attempt == 0 else RETRY_TEMPERATURE)
             problems = verify(result, retrieved)
         except Exception as err:  # malformed JSON etc. counts as a failed attempt
             result, problems = None, [f"The reply was not valid JSON for the schema ({type(err).__name__})."]
@@ -154,7 +157,8 @@ def generate_answer(question: str, retrieved: list[Retrieved], extra_instruction
             messages = messages + [
                 {"role": "assistant", "content": result.model_dump_json() if result else "{}"},
                 {"role": "user", "content": "Your reply failed verification: " + " ".join(problems)
-                 + " Reply again. Cite only provided chunk_ids and quote the passages exactly."}]
+                 + " Reply again. Cite only provided chunk_ids. Copy each quote exactly from ONE passage,"
+                 " and for tables copy the text of a single table cell. Delete any quote you cannot copy exactly."}]
 
     if problems or result is None:
         return Answer(question=question, answer=SAFE_ANSWER, answerable=False, verified=False,
